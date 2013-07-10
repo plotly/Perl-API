@@ -1,0 +1,23 @@
+# THIS IS AN AUTOMATICALLY GENERATED FILE.
+# CHANGES TO IT WILL BE DESTROYED BY Dist::Zilla.
+# TO EFFECT PERMANENT CHANGES, EDIT dist.ini AND
+# RUN `dzil build`.
+
+*.bak
+*.old
+*.tmp
+*.tar.gz
+*~
+/Build
+/Build.bat
+/Makefile
+/_build
+/.build
+/blib
+/cover_db
+/pm_to_blib
+/PM_to_blib
+/MYMETA.yml
+/WebService-Plotly-*
+
+

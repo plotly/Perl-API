@@ -1,0 +1,71 @@
+{
+   "abstract" : "#",
+   "author" : [
+      "Christian Walde <walde.christian@googlemail.com>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640",
+   "license" : [
+      "unrestricted"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "WebService-Plotly",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "examples",
+         "corpus"
+      ],
+      "package" : [
+         "DB"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.30"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "perl" : "5.006",
+            "strictures" : 0
+         }
+      },
+      "test" : {
+         "requires" : {
+            "File::Find" : 0,
+            "File::Temp" : 0,
+            "Test::InDistDir" : 0,
+            "Test::More" : 0,
+            "strict" : 0,
+            "warnings" : 0
+         }
+      }
+   },
+   "provides" : {
+      "WebService::Plotly" : {
+         "file" : "lib/WebService/Plotly.pm",
+         "version" : "0.000001"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "mailto" : "bug-webservice-plotly at rt.cpan.org",
+         "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=WebService-Plotly"
+      },
+      "homepage" : "https://github.com/wchristian/webservice-plotly",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/wchristian/webservice-plotly.git",
+         "web" : "https://github.com/wchristian/webservice-plotly"
+      }
+   },
+   "version" : "0.000001"
+}
+
