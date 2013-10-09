@@ -72,7 +72,7 @@
    "resources" : {
       "bugtracker" : {
          "mailto" : "bug-webservice-plotly at rt.cpan.org",
-         "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=WebService-Plotly"
+         "web" : "https://github.com/cparmer/plotlyperl/issues"
       },
       "homepage" : "https://github.com/cparmer/plotlyperl",
       "repository" : {

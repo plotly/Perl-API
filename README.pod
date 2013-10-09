@@ -134,7 +134,7 @@ bill for it.
 =head2 Bugs / Feature Requests
 
 Please report any bugs or feature requests through the issue tracker
-at L<http://rt.cpan.org/Public/Dist/Display.html?Name=WebService-Plotly>.
+at L<https://github.com/cparmer/plotlyperl/issues>.
 You will be notified automatically of any progress on your issue.
 
 =head2 Source Code
