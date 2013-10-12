@@ -5,7 +5,7 @@
       "Christopher Parmer <chris@plot.ly>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300034, CPAN::Meta::Converter version 2.131560",
+   "generated_by" : "Dist::Zilla version 4.300039, CPAN::Meta::Converter version 2.131560",
    "license" : [
       "mit"
    ],
@@ -52,8 +52,10 @@
       "test" : {
          "requires" : {
             "Capture::Tiny" : "0",
-            "File::Find" : "0",
+            "File::Spec" : "0",
             "File::Temp" : "0",
+            "IO::Handle" : "0",
+            "IPC::Open3" : "0",
             "PDL::Constants" : "0",
             "Test::Fatal" : "0",
             "Test::InDistDir" : "0",
@@ -65,7 +67,7 @@
    "provides" : {
       "WebService::Plotly" : {
          "file" : "lib/WebService/Plotly.pm",
-         "version" : "1.132820"
+         "version" : "1.132850"
       }
    },
    "release_status" : "stable",
@@ -81,6 +83,6 @@
          "web" : "https://github.com/cparmer/plotlyperl"
       }
    },
-   "version" : "1.132820"
+   "version" : "1.132850"
 }
 
