@@ -87,12 +87,20 @@ sub run {
   SKIP: {
         skip "no PDL", 15 if !require PDL;
         require PDL::Constants;
+        require Storable;
+        require PDL::IO::Storable;
 
         my $url  = "https://plot.ly/~$user{un}/2";
         my $name = "plot from API (2)";
 
-        my $x1 = zeroes( 50 )->xlinvals( 0, 20 * PDL::Constants::PI() );
-        my $y1 = sin( $x1 ) * exp( -0.1 * $x1 );
+        my $pdl_data = "t/pdl_data";
+        if ( !-f $pdl_data ) {
+            my $x1 = zeroes( 50 )->xlinvals( 0, 20 * PDL::Constants::PI() );
+            my $y1 = sin( $x1 ) * exp( -0.1 * $x1 );
+            Storable::store [ $x1, $y1 ], $pdl_data;
+        }
+
+        my ( $x1, $y1 ) = @{ Storable::retrieve( $pdl_data ) };
 
         my ( $out, $err, $response ) = capture {
             $py->plot( $x1, $y1 );
@@ -176,6 +184,7 @@ sub fake_responses {
         "/apimkacct / email=$email&un=$user->{un}&version=$version&platform=Perl" =>
 qq[{"api_key": "$user->{key}", "message": "", "un": "$user->{un}", "tmp_pw": "$user->{password}", "error": ""}],
 "/clientresp / kwargs=%7B%22fileopt%22%3Anull%2C%22filename%22%3Anull%7D&un=$user->{un}&version=$version&origin=plot&args=%5B%5B1%2C2%2C3%2C4%5D%2C%5B10%2C15%2C13%2C17%5D%2C%5B2%2C3%2C4%2C5%5D%2C%5B16%2C5%2C11%2C9%5D%5D&platform=Perl&key=$user->{key}"
+
           => qq[{"url": "https://plot.ly/~$user->{un}/0", "message": "High five! You successfuly sent some data to your account on plotly. View your plot in your browser at https://plot.ly/~$user->{un}/0 or inside your plot.ly account where it is named 'plot from API'", "warning": "", "filename": "plot from API", "error": ""}],
 "/clientresp / kwargs=%7B%22fileopt%22%3Anull%2C%22filename%22%3A%22plot+from+API%22%7D&un=$user->{un}&version=$version&origin=plot&args=%5B%7B%22pointpos%22%3A-1.8%2C%22y%22%3A%5B1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%5D%2C%22boxpoints%22%3A%22all%22%2C%22jitter%22%3A0.3%2C%22type%22%3A%22box%22%7D%5D&platform=Perl&key=$user->{key}"
           => qq[{"url": "https://plot.ly/~$user->{un}/1", "message": "High five! You successfuly sent some data to your account on plotly. View your plot in your browser at https://plot.ly/~$user->{un}/1 or inside your plot.ly account where it is named 'plot from API (1)'", "warning": "", "filename": "plot from API (1)", "error": ""}],

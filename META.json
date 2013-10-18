@@ -56,6 +56,7 @@
             "File::Temp" : "0",
             "IO::Handle" : "0",
             "IPC::Open3" : "0",
+            "Storable" : "0",
             "Test::Fatal" : "0",
             "Test::InDistDir" : "0",
             "Test::More" : "0",
