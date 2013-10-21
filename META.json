@@ -56,6 +56,7 @@
             "File::Temp" : "0",
             "IO::Handle" : "0",
             "IPC::Open3" : "0",
+            "PDL" : "0",
             "Storable" : "0",
             "Test::Fatal" : "0",
             "Test::InDistDir" : "0",
@@ -67,7 +68,7 @@
    "provides" : {
       "WebService::Plotly" : {
          "file" : "lib/WebService/Plotly.pm",
-         "version" : "1.132910"
+         "version" : "1.132940"
       }
    },
    "release_status" : "stable",
@@ -83,6 +84,6 @@
          "web" : "https://github.com/cparmer/plotlyperl"
       }
    },
-   "version" : "1.132910"
+   "version" : "1.132940"
 }
 

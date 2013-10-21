@@ -2,6 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+1.132940  2013-10-21 14:47:24 Europe/Berlin
+    - more test fixes
+
 1.132910  2013-10-18 19:08:59 Europe/Berlin
     - fix PDL testing issues
 
