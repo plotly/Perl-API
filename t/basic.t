@@ -98,7 +98,7 @@ sub run {
         if ( !-f $pdl_data ) {
             my $x1 = zeroes( 50 )->xlinvals( 0, 20 * PDL::Constants::PI() );
             my $y1 = sin( $x1 ) * exp( -0.1 * $x1 );
-            Storable::store [ $x1, $y1 ], $pdl_data;
+            Storable::nstore [ $x1, $y1 ], $pdl_data;
         }
 
         my ( $x1, $y1 ) = @{ Storable::retrieve( $pdl_data ) };
