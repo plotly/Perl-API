@@ -61,6 +61,7 @@
             "Test::Fatal" : "0",
             "Test::InDistDir" : "0",
             "Test::More" : "0",
+            "URI" : "0",
             "strict" : "0"
          }
       }
@@ -68,7 +69,7 @@
    "provides" : {
       "WebService::Plotly" : {
          "file" : "lib/WebService/Plotly.pm",
-         "version" : "1.132940"
+         "version" : "1.132950"
       }
    },
    "release_status" : "stable",
@@ -84,6 +85,6 @@
          "web" : "https://github.com/cparmer/plotlyperl"
       }
    },
-   "version" : "1.132940"
+   "version" : "1.132950"
 }
 

@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+1.132950  2013-10-22 11:36:48 Europe/Berlin
+    - and even more test fixes to avoid byte order, json key order and url key
+      order issues
+
 1.132940  2013-10-21 14:47:24 Europe/Berlin
     - more test fixes
 

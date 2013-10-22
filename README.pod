@@ -4,7 +4,7 @@ WebService::Plotly - access plot.ly programmatically
 
 =head1 VERSION
 
-version 1.132940
+version 1.132950
 
 =head1 SYNOPSIS
 
