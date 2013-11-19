@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    - restrict PDL data to integers to avoid platform porting issues
 
 1.132950  2013-10-22 11:36:48 Europe/Berlin
     - and even more test fixes to avoid byte order, json key order and url key
