@@ -37,6 +37,35 @@ Note that WS::Plotly caches the filename on the plotly server inside the object,
 so that further plot/style/layout calls can be used to modified an existing
 plot.
 
+=head1 EXAMPLES
+
+You can find examples plots at L<https://plot.ly/api/perl/>.
+
+=begin html
+
+A sample of the plots available are shown below. To view the example code, follow the links.
+
+<style type="text/css">
+#inline-list ul, #inline-list li {
+ display: inline;
+ list-style: none;
+ padding: 5px;
+ }
+</style>
+<div id="inline-list">
+<p>
+<ul>
+<li> <a href="https://plot.ly/perl/script-demos/fishschool"><img src="https://plot.ly/static/img/demoscriptthumbs/fishschool.png"/></a> </li>
+
+<li> <a href="https://plot.ly/perl/script-demos/histarea"><img src="https://plot.ly/static/img/demoscriptthumbs/histarea.png"/></a> </li>
+
+<li> <a href="https://plot.ly/perl/script-demos/math"><img src="https://plot.ly/static/img/demoscriptthumbs/math.png"/></a> </li>
+</ul>
+</p>
+</div>
+
+=end html
+
 =head1 CONSTRUCTOR
 
 WS::Plotly uses a standard Moo constructor.
