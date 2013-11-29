@@ -2,6 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+1.133331  2013-11-30 00:45:27 Europe/Berlin
+    - doc fixes to make example images visible on sco, courtesy of sivoais
+
 1.133330  2013-11-29 20:46:18 Europe/Berlin
     - add examples, courtesy of sivoais
 
