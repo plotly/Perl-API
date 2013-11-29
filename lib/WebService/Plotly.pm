@@ -45,19 +45,33 @@ A sample of the plots available are shown below (if you don't see images below,
 view this documentation on L<MetaCPAN|https://metacpan.org/pod/WebService::Plotly>).
 To view the example code, follow the links.
 
+=over 2
+
+=item * L<Fishschool Scatter Graph|https://plot.ly/perl/script-demos/fishschool>
+
 =begin html
 
-<div>
-<ul>
-<li> <a href="https://plot.ly/perl/script-demos/fishschool"><img src="https://plot.ly/static/img/demoscriptthumbs/fishschool.png"/></a> </li>
-
-<li> <a href="https://plot.ly/perl/script-demos/histarea"><img src="https://plot.ly/static/img/demoscriptthumbs/histarea.png"/></a> </li>
-
-<li> <a href="https://plot.ly/perl/script-demos/math"><img src="https://plot.ly/static/img/demoscriptthumbs/math.png"/></a> </li>
-</ul>
-</div>
+<div><img src="https://plot.ly/static/img/demoscriptthumbs/fishschool.png"></div>
 
 =end html
+
+=item * L<Histogram Area Plot|https://plot.ly/perl/script-demos/histarea>
+
+=begin html
+
+<div><img src="https://plot.ly/static/img/demoscriptthumbs/histarea.png"></div>
+
+=end html
+
+=item * L<Math Scores|https://plot.ly/perl/script-demos/math>
+
+=begin html
+
+<div><img src="https://plot.ly/static/img/demoscriptthumbs/math.png"></div>
+
+=end html
+
+=back
 
 =head1 CONSTRUCTOR
 
