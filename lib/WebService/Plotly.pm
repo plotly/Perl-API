@@ -47,15 +47,7 @@ To view the example code, follow the links.
 
 =begin html
 
-<style type="text/css">
-#inline-list ul, #inline-list li {
- display: inline;
- list-style: none;
- padding: 5px;
- }
-</style>
-<div id="inline-list">
-<p>
+<div>
 <ul>
 <li> <a href="https://plot.ly/perl/script-demos/fishschool"><img src="https://plot.ly/static/img/demoscriptthumbs/fishschool.png"/></a> </li>
 
@@ -63,7 +55,6 @@ To view the example code, follow the links.
 
 <li> <a href="https://plot.ly/perl/script-demos/math"><img src="https://plot.ly/static/img/demoscriptthumbs/math.png"/></a> </li>
 </ul>
-</p>
 </div>
 
 =end html
