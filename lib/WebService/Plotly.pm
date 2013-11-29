@@ -41,9 +41,11 @@ plot.
 
 You can find examples plots at L<https://plot.ly/api/perl/>.
 
-=begin html
+A sample of the plots available are shown below (if you don't see images below,
+view this documentation on L<MetaCPAN|https://metacpan.org/pod/WebService::Plotly>).
+To view the example code, follow the links.
 
-A sample of the plots available are shown below. To view the example code, follow the links.
+=begin html
 
 <style type="text/css">
 #inline-list ul, #inline-list li {
