@@ -158,7 +158,7 @@ bill for it.
 =head2 Bugs / Feature Requests
 
 Please report any bugs or feature requests through the issue tracker
-at L<https://github.com/cparmer/plotlyperl/issues>.
+at L<https://github.com/plotly/Perl-API/issues>.
 You will be notified automatically of any progress on your issue.
 
 =head2 Source Code
@@ -166,9 +166,9 @@ You will be notified automatically of any progress on your issue.
 This is open source software.  The code repository is available for
 public review and contribution under the terms of the license.
 
-L<https://github.com/cparmer/plotlyperl>
+L<https://github.com/plotly/Perl-API>
 
-  git clone https://github.com/cparmer/plotlyperl.git
+  git clone https://github.com/plotly/Perl-API.git
 
 =head1 AUTHORS
 

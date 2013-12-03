@@ -75,13 +75,13 @@
    "resources" : {
       "bugtracker" : {
          "mailto" : "bug-webservice-plotly at rt.cpan.org",
-         "web" : "https://github.com/cparmer/plotlyperl/issues"
+         "web" : "https://github.com/plotly/Perl-API/issues"
       },
-      "homepage" : "https://github.com/cparmer/plotlyperl",
+      "homepage" : "https://github.com/plotly/Perl-API",
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/cparmer/plotlyperl.git",
-         "web" : "https://github.com/cparmer/plotlyperl"
+         "url" : "https://github.com/plotly/Perl-API.git",
+         "web" : "https://github.com/plotly/Perl-API"
       }
    },
    "version" : "1.133331"
