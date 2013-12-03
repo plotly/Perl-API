@@ -63,7 +63,7 @@ sub run {
     }
 
   SKIP: {
-        skip "no PDL", 15 if !eval { require PDL };
+        skip "no PDL", 15 if PDL->VERSION < 2.006;
         my $url  = "https://plot.ly/~$user{un}/1";
         my $name = "plot from API (1)";
         my $box  = {
@@ -86,7 +86,7 @@ sub run {
     }
 
   SKIP: {
-        skip "no PDL", 15 if !eval { require PDL };
+        skip "no PDL", 15 if PDL->VERSION < 2.006;
         require PDL::Constants;
         require Storable;
         require PDL::IO::Storable;
