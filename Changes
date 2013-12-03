@@ -2,6 +2,11 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+1.133370  2013-12-03 14:00:04 Europe/Berlin
+    - moved repo to plotly account
+    - when using PDL functionality, PDL needs to be 2.006 or greater
+    - PDL no longer hard dependency
+
 1.133331  2013-11-30 00:45:27 Europe/Berlin
     - doc fixes to make example images visible on sco, courtesy of sivoais
 

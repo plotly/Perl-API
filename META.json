@@ -68,7 +68,7 @@
    "provides" : {
       "WebService::Plotly" : {
          "file" : "lib/WebService/Plotly.pm",
-         "version" : "1.133331"
+         "version" : "1.133370"
       }
    },
    "release_status" : "stable",
@@ -84,6 +84,6 @@
          "web" : "https://github.com/plotly/Perl-API"
       }
    },
-   "version" : "1.133331"
+   "version" : "1.133370"
 }
 
