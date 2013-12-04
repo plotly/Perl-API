@@ -7,6 +7,7 @@ use Test::More;
 use Capture::Tiny 'capture';
 use Test::Fatal;
 use URI;
+use version;
 
 use WebService::Plotly;
 
@@ -63,7 +64,7 @@ sub run {
     }
 
   SKIP: {
-        skip "no PDL", 15 if PDL->VERSION < 2.006;
+        skip "no PDL", 15 if version->parse( PDL->VERSION ) < 2.006;
         my $url  = "https://plot.ly/~$user{un}/1";
         my $name = "plot from API (1)";
         my $box  = {
@@ -86,7 +87,7 @@ sub run {
     }
 
   SKIP: {
-        skip "no PDL", 15 if PDL->VERSION < 2.006;
+        skip "no PDL", 15 if version->parse( PDL->VERSION ) < 2.006;
         require PDL::Constants;
         require Storable;
         require PDL::IO::Storable;
@@ -98,8 +99,9 @@ sub run {
         if ( !-f $pdl_data ) {
             my $x1 = zeroes( 50 )->xlinvals( 0, 20 * PDL::Constants::PI() );
             my $y1 = ( sin( $x1 ) * exp( -0.1 * $x1 ) );
+
             # restrict PDL data to integers to avoid platform porting issues
-            Storable::nstore [ ($x1*100)->long, ($y1*10000)->long ], $pdl_data;
+            Storable::nstore [ ( $x1 * 100 )->long, ( $y1 * 10000 )->long ], $pdl_data;
         }
 
         my ( $x1, $y1 ) = @{ Storable::retrieve( $pdl_data ) };

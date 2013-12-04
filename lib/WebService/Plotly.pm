@@ -196,7 +196,7 @@ sub _makecall {
     {
         no warnings 'once';
         local *PDL::TO_JSON = sub { $_[0]->unpdl }
-          if PDL->VERSION >= 2.006;
+          if version->parse( PDL->VERSION ) >= 2.006;
         my $convert = sub { JSON->new->utf8->convert_blessed( 1 )->canonical( 1 )->encode( $_[0] ) };
         $json_args   = $convert->( $args );
         $json_kwargs = $convert->( \%kwargs );
