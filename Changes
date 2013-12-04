@@ -2,6 +2,11 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+1.133380  2013-12-04 10:36:32 Europe/Berlin
+    - die with an explanatory message if PDL version is to low to encode to
+      JSON
+    - allow PDL version comparisons to deal with uninstalled, or dev versions
+
 1.133370  2013-12-03 14:00:04 Europe/Berlin
     - moved repo to plotly account
     - when using PDL functionality, PDL needs to be 2.006 or greater

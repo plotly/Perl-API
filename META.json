@@ -61,14 +61,15 @@
             "Test::InDistDir" : "0",
             "Test::More" : "0",
             "URI" : "0",
-            "strict" : "0"
+            "strict" : "0",
+            "version" : "0"
          }
       }
    },
    "provides" : {
       "WebService::Plotly" : {
          "file" : "lib/WebService/Plotly.pm",
-         "version" : "1.133370"
+         "version" : "1.133380"
       }
    },
    "release_status" : "stable",
@@ -84,6 +85,6 @@
          "web" : "https://github.com/plotly/Perl-API"
       }
    },
-   "version" : "1.133370"
+   "version" : "1.133380"
 }
 
