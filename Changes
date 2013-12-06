@@ -2,6 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+1.133400  2013-12-06 10:49:16 Europe/Berlin
+    - declare dependency on version.pm 0.77 for ->parse() on older perls
+
 1.133380  2013-12-04 10:36:32 Europe/Berlin
     - die with an explanatory message if PDL version is to low to encode to
       JSON
