@@ -169,6 +169,7 @@ bill for it.
 
 use JSON qw( decode_json encode_json );
 use LWP::UserAgent;
+use version 0.77;
 
 use Moo;
 
